@@ -1,8 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import Router from "./routes/Router";
+import { GlobalStyle } from "./styles/global";
+import { defaultTheme } from "./styles/themes/default";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Storageconnect</h1>
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <BrowserRouter>
+        <h1>Storageconnect</h1>
+        <Router />
+      </BrowserRouter>
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
 
