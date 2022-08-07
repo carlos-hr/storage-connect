@@ -3,27 +3,30 @@ import { NavLink } from "react-router-dom";
 
 interface NavbarContainerProps {
   extendNavbar: boolean;
+  transparent?: boolean;
 }
+
+interface NavbarInnerContainerProps {}
 
 export const NavbarContainer = styled.nav<NavbarContainerProps>`
   height: ${(props) => (props.extendNavbar ? "100vh" : "6rem")};
-  background: ${(props) => props.theme.primary};
   display: flex;
   flex-direction: column;
-  transition: all 0.3s;
+  background: ${(props) =>
+    props.transparent ? "transparent" : props.theme.primary};
+  transition: all 1s;
 
   @media (min-width: 768px) {
     height: 6rem;
   }
 `;
 
-export const NavbarInnerContainer = styled.div`
+export const NavbarInnerContainer = styled.div<NavbarInnerContainerProps>`
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  background: ${(props) => props.theme.primary};
   min-height: 6rem;
   height: 6rem;
 

@@ -20,11 +20,18 @@ import {
 } from "./styled";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const Header = () => {
+interface HeaderProps {
+  transparent?: boolean;
+}
+
+const Header = ({ transparent = false }: HeaderProps) => {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
-    <NavbarContainer extendNavbar={extendNavbar}>
+    <NavbarContainer
+      extendNavbar={extendNavbar}
+      transparent={extendNavbar ? false : transparent}
+    >
       <NavbarInnerContainer>
         <LogoContainer>
           <img src="/logo.svg" alt="logo" />
@@ -36,7 +43,12 @@ const Header = () => {
             <NavbarLink to="/products">{navLink2}</NavbarLink>
             <NavbarLink to="/contact">{navLink3}</NavbarLink>
             <NavbarLink to="/about">{navLink4}</NavbarLink>
-            <Button text={textContactUs} width="6.875rem" height="2.25rem" />
+            <Button
+              text={textContactUs}
+              width="6.875rem"
+              height="2.25rem"
+              background="secondary"
+            />
             <MenuButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);

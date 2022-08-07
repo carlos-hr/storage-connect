@@ -2,7 +2,7 @@ import { BaseButton } from "./styled";
 
 interface ButtonProps {
   text: string;
-  background?: "primary" | "secondary";
+  background?: "primary" | "secondary" | "white";
   color?: string;
   height?: string;
   width?: string;
