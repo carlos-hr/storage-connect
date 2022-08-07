@@ -8,7 +8,6 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <h1>Storageconnect</h1>
         <Router />
       </BrowserRouter>
       <GlobalStyle />
