@@ -1,5 +1,10 @@
 import Button from "../common/Button";
-import { bannerSubtitle, bannerTitle } from "./locales";
+import {
+  bannerSubtitle,
+  bannerTitle,
+  firstButton,
+  secondButton,
+} from "./locales";
 import {
   BannerContainer,
   BannerTextContainer,
@@ -15,13 +20,13 @@ const Banner = () => {
       </BannerTextContainer>
       <ButtonsContainer>
         <Button
-          text="Sell Your Self Storage"
+          text={firstButton}
           background="secondary"
           width="15.6875rem"
           height="3.75rem"
         />
         <Button
-          text="Active Self Storage Listings"
+          text={secondButton}
           background="white"
           width="15.6875rem"
           height="3.75rem"
