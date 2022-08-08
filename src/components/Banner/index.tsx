@@ -15,22 +15,16 @@ const Banner = () => {
   return (
     <BannerContainer>
       <BannerTextContainer>
-        <p>{bannerTitle}</p>
+        <h1>{bannerTitle}</h1>
         <p>{bannerSubtitle}</p>
       </BannerTextContainer>
       <ButtonsContainer>
-        <Button
-          text={firstButton}
-          background="secondary"
-          width="15.6875rem"
-          height="3.75rem"
-        />
-        <Button
-          text={secondButton}
-          background="white"
-          width="15.6875rem"
-          height="3.75rem"
-        />
+        <Button background="secondary" width="15.6875rem" height="3.75rem">
+          {firstButton}
+        </Button>
+        <Button background="white" width="15.6875rem" height="3.75rem">
+          {secondButton}
+        </Button>
       </ButtonsContainer>
     </BannerContainer>
   );

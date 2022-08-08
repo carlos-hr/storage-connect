@@ -1,0 +1,13 @@
+@media (min-width: 1480px) {
+  .alice-carousel__wrapper {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.alice-carousel__stage {
+  display: flex;
+  gap: 1.25rem;
+  width: auto;
+}

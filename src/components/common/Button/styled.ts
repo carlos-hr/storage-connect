@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface BaseButtonProps {
   background: keyof typeof BUTTON_COLORS;
-  color?: string;
+  color?: keyof typeof BUTTON_COLORS;
   height: string;
   width: string;
 }
@@ -18,7 +18,7 @@ export const BaseButton = styled.button<BaseButtonProps>`
   height: ${(props) => props.height};
   border-radius: 10px;
   background: ${(props) => props.theme[BUTTON_COLORS[props.background]]};
-  color: "#021850";
+  color: ${(props) => props.color};
   font-family: "Poppins";
   font-weight: 500;
   font-size: 1rem;

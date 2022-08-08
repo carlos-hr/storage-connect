@@ -1,10 +1,24 @@
-import { Banner } from "../../components";
+import { Banner, StorageCarousel } from "../../components";
+import { sessionSubtitle, sessionTitle } from "./locales";
+import {
+  FillElement,
+  CarouselContainer,
+  CarouselTextContainer,
+} from "./styled";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Banner />
-    </div>
+      <FillElement />
+      <CarouselContainer>
+        <CarouselTextContainer>
+          <h1>{sessionTitle}</h1>
+          <p>{sessionSubtitle}</p>
+        </CarouselTextContainer>
+        <StorageCarousel />
+      </CarouselContainer>
+    </>
   );
 };
 
