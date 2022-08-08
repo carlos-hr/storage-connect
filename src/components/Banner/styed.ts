@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import banner from "../../assets/banner.svg";
+import banner from "../../assets/banner.png";
 
 export const BannerContainer = styled.main`
   height: 38.0625rem;
   width: 100%;
   background-image: url(${banner});
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -23,7 +24,7 @@ export const BannerTextContainer = styled.div`
   max-width: 90%;
   margin-top: 1rem;
 
-  p:first-child {
+  h1 {
     font-weight: 800;
     font-size: 3.75rem;
     line-height: 1.25;
@@ -33,7 +34,7 @@ export const BannerTextContainer = styled.div`
     }
   }
 
-  p:nth-child(2) {
+  p {
     font-weight: 500;
     font-size: 1.25rem;
     padding-top: 0.625rem;

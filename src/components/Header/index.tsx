@@ -43,12 +43,9 @@ const Header = ({ transparent = false }: HeaderProps) => {
             <NavbarLink to="/products">{navLink2}</NavbarLink>
             <NavbarLink to="/contact">{navLink3}</NavbarLink>
             <NavbarLink to="/about">{navLink4}</NavbarLink>
-            <Button
-              text={textContactUs}
-              width="6.875rem"
-              height="2.25rem"
-              background="secondary"
-            />
+            <Button width="6.875rem" height="2.25rem" background="secondary">
+              {textContactUs}
+            </Button>
             <MenuButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);

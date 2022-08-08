@@ -4,4 +4,5 @@ export const defaultTheme = {
   primary: "#1849C6",
   secondary: "#FFCE31",
   background: "#F5F5F5",
+  cardBackground: "#F6F8FD",
 };
