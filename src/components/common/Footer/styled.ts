@@ -28,7 +28,7 @@ export const FooterContainer = styled.footer`
     font-weight: 400;
   }
 
-  @media (max-width: 580px) {
+  @media (max-width: 1260px) {
     height: fit-content;
   }
 `;
@@ -48,9 +48,12 @@ export const FooterContent = styled.div`
   padding-top: 3.25rem;
 
   @media (max-width: 580px) {
-    height: fit-content;
     background-image: url(${rectangleLeft});
     background-position: bottom center;
+  }
+
+  @media (max-width: 1260px) {
+    height: fit-content;
   }
 `;
 
