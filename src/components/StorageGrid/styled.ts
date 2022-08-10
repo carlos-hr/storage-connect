@@ -6,8 +6,7 @@ export const MainContainer = styled.main`
   align-items: center;
 
   > button {
-    margin-top: 5rem;
-
+    margin: 5rem 0;
     @media (max-width: 375px) {
       max-width: calc(100% - 2.5rem);
     }

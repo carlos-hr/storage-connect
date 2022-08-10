@@ -65,6 +65,8 @@ export const GridHeading = styled.div`
   max-width: 100%;
   margin: auto;
   padding-top: 5.5625rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
   h3 {
     font-size: 2.1875rem;
