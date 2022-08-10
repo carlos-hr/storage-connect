@@ -2,7 +2,21 @@ import { BiWorld } from "react-icons/bi";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import LogoIcon from "../../../assets/icons/logoIcon";
 import Button from "../Button";
-import { storeName } from "../locales";
+import {
+  copyrights,
+  headingNewsleter,
+  headingSocialMedias,
+  languageLabel,
+  link1,
+  link2,
+  link3,
+  link4,
+  storeName,
+  subscribeButton,
+  subscribeNewsleter,
+  subscribePlaceholder,
+  summarySubtitle,
+} from "../locales";
 import {
   FooterContainer,
   FooterContent,
@@ -22,31 +36,29 @@ const Footer = () => {
             <LogoIcon />
             <h3>{storeName}</h3>
           </div>
-          <p>
-            Nam posuere accumsan porta. Integer id orci sed ante tincidunt
-            tincidunt sit amet sed libero.
-          </p>
-          <p>© StorageConnect 2022, All Rights Reserved</p>
+          <p>{summarySubtitle}</p>
+          <p>{copyrights}</p>
         </SummaryContainer>
 
         <LinksContainer>
           <h4>QUICK LINKS</h4>
-          <p>Active Listings </p>
-          <p> Self your Self Storage</p>
-          <p> Free Evaluation Learn</p>
+          <p>{link1} </p>
+          <p>{link2}</p>
+          <p>{link3}</p>
+          <p>{link4}</p>
         </LinksContainer>
 
         <NewsletterContainer>
-          <h4>NEWSLETER</h4>
-          <p>Get latest updates right in your inbox</p>
-          <input type="email" placeholder="Enter your email" />
+          <h4>{headingNewsleter}</h4>
+          <p>{subscribeNewsleter}</p>
+          <input type="email" placeholder={subscribePlaceholder} />
           <Button width="10rem" height="3.125rem" color="white">
-            Subscribe Now
+            {subscribeButton}
           </Button>
         </NewsletterContainer>
 
         <SocialMediaContainer>
-          <h4>LET'S GET SOCIAL</h4>
+          <h4>{headingSocialMedias}</h4>
           <div>
             <SocialMediaIcon>
               <BsFacebook />
@@ -65,7 +77,7 @@ const Footer = () => {
           <div>
             <label htmlFor="lang-select">
               <BiWorld />
-              English - En
+              {languageLabel}
             </label>
             <select name="lang-select" id="lang-select">
               <option></option>
