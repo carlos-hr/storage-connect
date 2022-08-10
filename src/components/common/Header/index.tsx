@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../common/Button";
+import Button from "../Button";
 import {
   navLink1,
   navLink2,
@@ -7,7 +7,7 @@ import {
   navLink4,
   storeName,
   textContactUs,
-} from "./locales";
+} from "../locales";
 import {
   BaseLink,
   LogoContainer,
@@ -19,6 +19,7 @@ import {
   MenuButton,
 } from "./styled";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import LogoIcon from "../../../assets/icons/logoIcon";
 
 interface HeaderProps {
   transparent?: boolean;
@@ -34,7 +35,7 @@ const Header = ({ transparent = false }: HeaderProps) => {
     >
       <NavbarInnerContainer>
         <LogoContainer>
-          <img src="/logo.svg" alt="logo" />
+          <LogoIcon />
           <p>{storeName}</p>
         </LogoContainer>
         <NavContainer>

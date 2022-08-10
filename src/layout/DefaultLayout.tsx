@@ -1,6 +1,5 @@
-import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 
 const DefaultLayout = () => {
   const { pathname } = useLocation();
@@ -10,6 +9,7 @@ const DefaultLayout = () => {
     <>
       <Header transparent={isHomePath} />
       <Outlet />
+      <Footer />
     </>
   );
 };

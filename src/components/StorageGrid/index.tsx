@@ -1,5 +1,5 @@
+import { Button } from "../";
 import { storageData } from "../../utils/storageData";
-import Button from "../common/Button";
 import StorageCard from "../StorageCard";
 import { viewMoreListingsButton } from "./locales";
 import { GridContainer, MainContainer } from "./styled";
