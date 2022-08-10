@@ -1,9 +1,11 @@
-import { Banner, StorageCarousel } from "../../components";
-import { sessionSubtitle, sessionTitle } from "./locales";
+import { Banner, StorageCarousel, StorageGrid } from "../../components";
+import { sessionTitle, sessionSubtitle, gridTitle } from "./locales";
 import {
   FillElement,
   CarouselContainer,
   CarouselTextContainer,
+  StorageGridContainer,
+  GridHeading,
 } from "./styled";
 
 const Home = () => {
@@ -18,6 +20,14 @@ const Home = () => {
         </CarouselTextContainer>
         <StorageCarousel />
       </CarouselContainer>
+
+      <StorageGridContainer>
+        <GridHeading>
+          <h3>{gridTitle}</h3>
+          <p>{sessionSubtitle}</p>
+        </GridHeading>
+        <StorageGrid />
+      </StorageGridContainer>
     </>
   );
 };

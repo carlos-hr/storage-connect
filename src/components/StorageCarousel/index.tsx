@@ -1,5 +1,5 @@
-import StorageCard from "./StorageCard";
-import { storageData } from "./StorageCard/storageData";
+import StorageCard from "../StorageCard";
+import { storageData } from "../../utils/storageData";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./styles.css";

@@ -15,6 +15,7 @@ const BUTTON_COLORS = {
 
 export const BaseButton = styled.button<BaseButtonProps>`
   width: ${(props) => props.width};
+  max-width: 100%;
   height: ${(props) => props.height};
   border-radius: 10px;
   background: ${(props) => props.theme[BUTTON_COLORS[props.background]]};
