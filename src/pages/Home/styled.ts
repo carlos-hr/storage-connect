@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import elipse from "../../assets/elipse-bg.svg";
+import gridBg from "../../assets/grid-bg.png";
+import leftElipse from "../../assets/left-elipse.svg";
+import rightElipse from "../../assets/right-elipse.svg";
 
 export const FillElement = styled.div`
   height: 21.375rem;
@@ -40,5 +43,36 @@ export const CarouselTextContainer = styled.div`
     font-size: 1.125rem;
     font-weight: 400;
     padding-top: 1.25rem;
+  }
+`;
+
+export const StorageGridContainer = styled.div`
+  min-height: 102.125rem;
+  background-image: url(${leftElipse}), url(${rightElipse}), url(${gridBg});
+  background-repeat: no-repeat;
+  background-position: left center, right 20%;
+  background-size: auto, auto, cover;
+`;
+
+export const GridHeading = styled.div`
+  font-family: "Poppins";
+  color: ${(props) => props.theme.white};
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 49.9375rem;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 5.5625rem;
+
+  h3 {
+    font-size: 2.1875rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 `;

@@ -2,13 +2,13 @@ import { Card, DetailsContainer } from "./styled";
 import { FiMapPin } from "react-icons/fi";
 import { BiBuildingHouse } from "react-icons/bi";
 import { BsPeople, BsFullscreen } from "react-icons/bs";
-import Button from "../../common/Button";
+import Button from "../common/Button";
 import {
   occupancyText,
   sizeText,
   totalUnitsText,
   viewDetailsButton,
-} from "../locales";
+} from "../StorageCarousel/locales";
 
 interface StorageCardProps {
   data: {
