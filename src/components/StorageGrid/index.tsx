@@ -1,4 +1,3 @@
-import React from "react";
 import { storageData } from "../../utils/storageData";
 import Button from "../common/Button";
 import StorageCard from "../StorageCard";
